@@ -1,0 +1,17 @@
+[project]
+name = "kraken-backup"
+version = "0.1.0"
+description = "Autonomous, modular, service-scoped backup orchestrator with Restic + Google Drive off-site deduplication"
+readme = "README.md"
+authors = [
+    { name = "George Santana", email = "georgeasantanar@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+kraken-backup = "kraken_backup:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
